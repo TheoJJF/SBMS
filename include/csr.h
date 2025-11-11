@@ -5,17 +5,14 @@
 
 namespace SBMS
 {
-    class MatrixCSR
+    struct MatrixCSR
     {
-        public:
-            MatrixCSR();
-            MatrixCSR(unsigned int n, unsigned int nnz);
+        MatrixCSR(unsigned int size, unsigned int nnz);
 
-        private:
-            unsigned int n;
-            std::vector<double> value;
-            std::vector<unsigned int> colIdx;
-            std::vector<unsigned int> rowIdx;
+        unsigned int n;
+        std::vector<double> value;
+        std::vector<unsigned int> colIdx;
+        std::vector<unsigned int> rowIdx;
     };
 }
 
