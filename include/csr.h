@@ -14,6 +14,9 @@ namespace SBMS
         std::vector<unsigned int> colIdx;
         std::vector<unsigned int> rowIdx;
     };
+
+    void permute();
+    void computeFactor();
 }
 
 #endif
