@@ -1,9 +1,9 @@
 #include "../include/csr.h"
 
-SBMS::MatrixCSR::MatrixCSR(unsigned int const &size, unsigned int const &nnz)
+SBMS::MatrixCSR::MatrixCSR(unsigned int r, unsigned int c, unsigned int nnz)
 {
-    n = size;
+    n = r, m = c;
     std::vector<double> value(nnz);
     std::vector<unsigned int> colIdx(nnz);
-    std::vector<unsigned int> rowIdx(size + 1);
+    std::vector<unsigned int> rowIdx(r + 1);
 }

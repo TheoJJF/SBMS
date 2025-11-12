@@ -7,9 +7,9 @@ namespace SBMS
 {
     struct MatrixCSR
     {
-        MatrixCSR(unsigned int size, unsigned int nnz);
+        MatrixCSR(unsigned int r, unsigned int c, unsigned int nnz);
 
-        unsigned int n;
+        unsigned int n, m;
         std::vector<double> value;
         std::vector<unsigned int> colIdx;
         std::vector<unsigned int> rowIdx;
